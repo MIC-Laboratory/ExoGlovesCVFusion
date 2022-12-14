@@ -1,1 +1,1 @@
-# ExoGlovesCVFusion
+# Detail README will release soon
