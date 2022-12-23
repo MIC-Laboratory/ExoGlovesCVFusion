@@ -20,12 +20,8 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "args": [
-                "--model-dir",
-                "models/fruit",
-                "--batch-size",
-                "64",
-                "--epochs",
-                "30"
+                "--num-workers",
+                "0"
             ],
             "justMyCode": true
         }

@@ -17,9 +17,9 @@ from vision.ssd.mobilenet_v2_ssd_lite import create_mobilenetv2_ssd_lite
 # parse command line
 parser = argparse.ArgumentParser()
 parser.add_argument('--net', default="mb2-ssd-lite", help="The network architecture, it can be mb1-ssd (aka ssd-mobilenet), mb1-lite-ssd, mb2-ssd-lite or vgg16-ssd.")
-parser.add_argument('--input', type=str, default='model_exoglove_07262022.pth', help="path to input PyTorch model (.pth checkpoint)")
-parser.add_argument('--output', type=str, default='model_exoglove_07262022.onnx', help="desired path of converted ONNX model (default: <NET>.onnx)")
-parser.add_argument('--labels', type=str, default='models/COCO_fruit_exoglove_model_07262022_Zhenyu/labels.txt', help="name of the class labels file")
+parser.add_argument('--input', type=str, default='models\model_exoglove_07262022.pth', help="path to input PyTorch model (.pth checkpoint)")
+parser.add_argument('--output', type=str, default='models\model_exoglove_07262022.onnx', help="desired path of converted ONNX model (default: <NET>.onnx)")
+parser.add_argument('--labels', type=str, default='models\labels.txt', help="name of the class labels file")
 parser.add_argument('--width', type=int, default=300, help="input width of the model to be exported (in pixels)")
 parser.add_argument('--height', type=int, default=300, help="input height of the model to be exported (in pixels)")
 parser.add_argument('--batch-size', type=int, default=1, help="batch size of the model to be exported (default=1)")

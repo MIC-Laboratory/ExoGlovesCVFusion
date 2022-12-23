@@ -1,17 +1,16 @@
 .DS_Store
 .idea
 log
-data
-models
+data/*
+models/my_model/*
 
 eval_results/
 
 # Pytorch Models
-*.pth
-*.onnx
+
 
 # images
-*.jpg
+
 *.png
 
 # Byte-compiled / optimized / DLL files

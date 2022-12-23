@@ -1,0 +1,5 @@
+background
+apple
+banana
+orange
+hand

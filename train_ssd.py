@@ -49,7 +49,7 @@ parser.add_argument('--mb2-width-mult', default=1.0, type=float,
 
 # Params for loading pretrained basenet or checkpoints.
 parser.add_argument('--base-net', help='Pretrained base model')
-parser.add_argument('--pretrained-ssd', default='models/mb2-ssd-lite-mp-0_686.pth', type=str, help='Pre-trained base model')
+parser.add_argument('--pretrained-ssd', default='models\mb2-ssd-lite-mp-0_686-pretrained-VOC.pth', type=str, help='Pre-trained base model')
 parser.add_argument('--resume', default=None, type=str,
                     help='Checkpoint state_dict file to resume training from')
 
@@ -92,7 +92,7 @@ parser.add_argument('--debug-steps', default=10, type=int,
                     help='Set the debug log output frequency.')
 parser.add_argument('--use-cuda', default=True, type=str2bool,
                     help='Use CUDA to train model')
-parser.add_argument('--checkpoint-folder', '--model-dir', default='models/COCO_fruit_exoglove_model_07262022_Zhenyu',
+parser.add_argument('--checkpoint-folder', '--model-dir', default='models/my_model',
                     help='Directory for saving checkpoint models')
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO,
@@ -115,7 +115,9 @@ def train(loader, net, criterion, optimizer, device, debug_steps=100, epoch=-1):
         images, boxes, labels = data
         images = images.to(device)
         boxes = boxes.to(device)
+        labels = labels.type(torch.LongTensor)
         labels = labels.to(device)
+        
 
         optimizer.zero_grad()
         confidence, locations = net(images)
