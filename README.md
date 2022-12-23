@@ -1,7 +1,7 @@
 # ExoGlove Object Detection Implementation in Pytorch
 
 This repo implements SSD (Single Shot MultiBox Detector) in PyTorch for object detection, using MobileNet backbones. It also has out-of-box support for retraining on a private ExoGlove dataset and a fruit dataset.  
-Thanks to @qfgaohao for the upstream implementation from:  [https://github.com/qfgaohao/pytorch-ssd](https://github.com/qfgaohao/pytorch-ssd)
+> Thanks to @qfgaohao for the upstream implementation from:  [https://github.com/qfgaohao/pytorch-ssd](https://github.com/qfgaohao/pytorch-ssd)
 
 ## Dependencies
 1. Python 3.9+
