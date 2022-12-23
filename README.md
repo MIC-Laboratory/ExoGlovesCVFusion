@@ -85,7 +85,7 @@ python train_ssd.py
 | --output   | Absolute/Relative Path of the output onnx file(default is models\model_exoglove_07262022.onnx)  | 
 | --labels   | Absolute/Relative Path of the labels file(default is models\labels.txt)  | 
 
-### Comment
+### commend
 ```bash
 python export_onnx.py
 ```
