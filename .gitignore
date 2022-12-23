@@ -1,12 +1,16 @@
 .DS_Store
 .idea
+.vscode/
 log
-data/*
-models/my_model/*
+
+
 
 eval_results/
 
+# Pytorch Dataset
+data/*
 # Pytorch Models
+models/my_model/*
 *.pth
 *.onnx
 
