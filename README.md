@@ -54,9 +54,9 @@ python run_ssd_example_image.py --input-source-path [PATH_OF_IMAGE]
 
 ### Train
 #### CLI Parameters
-The ExoGlove-Fruit dataset and the model file can be download from https://sfsu.box.com/s/z2p9usaxxhphpt8s6elkde66oeptqlh6
-The dataset need to be place on data folder
-The model file need to be place on models folder
+The ExoGlove-Fruit dataset and the model file can be download from https://sfsu.box.com/s/z2p9usaxxhphpt8s6elkde66oeptqlh6  
+The dataset need to be place on data folder  
+The model file need to be place on models folder  
 | Parameters            | Description | Value Choices |
 | ----------            | ----------- | ------------- |
 | --net   | Network Type(default is mb2-ssd-lite) | mb2-ssd-lite
